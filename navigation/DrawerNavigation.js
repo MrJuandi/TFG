@@ -1,15 +1,16 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createDrawerNavigator } from '@react-navigation/drawer';
-import { TouchableOpacity, Text } from 'react-native';
 import HomeScreen from '../screens/HomeScreen';
+import ProfileScreen from '../screens/ProfileScreen.js';
+import { TouchableOpacity, Text } from 'react-native';
 
 const Drawer = createDrawerNavigator();
 
 const DrawerNavigation = () => {
   return (
     <NavigationContainer>
-      <Drawer.Navigator 
+      <Drawer.Navigator
         initialRouteName="Home"
         screenOptions={{
           headerShown: true,
@@ -30,6 +31,7 @@ const DrawerNavigation = () => {
             ),
           })}
         />
+        <Drawer.Screen name="Profile" component={ProfileScreen} />
       </Drawer.Navigator>
     </NavigationContainer>
   );

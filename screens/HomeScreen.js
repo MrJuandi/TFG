@@ -5,8 +5,9 @@ import styles from '../styles/styles';
 const HomeScreen = () => {
   return (
     <View style={styles.container}>
+      <Text style={styles.title}>Home</Text>
       <Text>Welcome to the Home Screen!</Text>
-      {/* Contenido */}
+      {/* Resto del contenido */}
     </View>
   );
 };

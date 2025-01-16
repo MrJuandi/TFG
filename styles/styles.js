@@ -7,4 +7,10 @@ export default StyleSheet.create({
     alignItems: 'center',
     backgroundColor: '#fff',
   },
+  title: {
+    fontSize: 50,
+    fontWeight: 'bold',
+    color: '#000',
+    marginBottom: 20,
+  }
 });
